@@ -1,0 +1,12 @@
+<h2> Welcome To ImageGallery! </h2>
+
+<% @posts.each do |x| %>
+    <br>
+    <br>
+  <div class="white">
+    <%= image_tag x.image.url(:medium) %>
+    <br>
+    <%= x.description %>
+  </div>
+
+<% end %>
